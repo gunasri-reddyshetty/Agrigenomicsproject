@@ -1,0 +1,58 @@
+<!--<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result</title>
+    <link rel="stylesheet" href="css/style_result.css">
+</head>
+<body>
+    <h1>Result</h1>
+    <p>Sequence: {{ sequence }}</p>
+    <p>Predicted Class: {{ predicted_class }}</p>
+    <p>Plant Height Prediction: {{ plant_height }}</p>
+</body>
+</html>-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles_result.css') }}">
+</head>
+<body>
+    <h1>Result</h1>
+    <br>
+    <p>Sequence: {{ sequence }}</p>
+    <br>
+    <p>Predicted Class: {{ predicted_class }}</p>
+    <br>
+    <p>Plant Height Prediction: {{ plant_height }}</p>
+</body>
+</html>-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles_result.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Result</h1>
+        <div class="result-box sequence-box">
+            <p>Sequence: {{ sequence }}</p>
+        </div>
+        <div class="result-box predicted-class-box">
+            <p>Predicted Class: {{ predicted_class }}</p>
+        </div>
+        <div class="result-box plant-height-box">
+            <p>Plant Height Prediction: {{ plant_height }}</p>
+        </div>
+    </div>
+</body>
+</html>
+
+
